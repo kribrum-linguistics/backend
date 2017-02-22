@@ -5,7 +5,43 @@
   <title>WEB INTERFACE</title>
   <meta name="description" content="web interface">
   <meta name="author" content="Maltsev M., Kurzukov M."></head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
 <body>
 <h1>Скоро здесь будет веб интерфейс</h1>
+<table>
+  <tr>
+    <td>
+<textarea id="queries_cases" rows=10 cols=80 placeholder="Введiть вашi запитання" style="resize: none"></textarea>
+    </td>
+
+    
+    <td>
+<table>
+  <tr>
+    <td>PyMorphy</td>
+    <td>
+<label class="switch">
+  <input id="morphparser" type="checkbox">
+  <div class="slider"></div>
+</label>
+    </td>
+<td>Morpher.Ru</td>
+  </tr>
+  <tr>
+    <td>Безы кавычек</td>
+    <td>
+    <label class="switch">
+  <input id="morphparser" type="checkbox">
+  <div class="slider"></div>
+  </td>
+  <td>
+    С кавычками</td>
+  </tr>
+</table> 
+</td>
+  </tr>
+
+</table>
+
 </body>
 </html>
